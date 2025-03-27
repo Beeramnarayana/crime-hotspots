@@ -14,6 +14,9 @@ export default defineConfig({
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, '')
       }
+    },
+    preview: {
+      allowedHosts: ['crime-hotspots.onrender.com']
     }
   }
 })
